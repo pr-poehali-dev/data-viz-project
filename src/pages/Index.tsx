@@ -4,7 +4,6 @@ import { GrainOverlay } from "@/components/grain-overlay"
 import { WorkSection } from "@/components/sections/work-section"
 import { ServicesSection } from "@/components/sections/services-section"
 import { AboutSection } from "@/components/sections/about-section"
-import { ContactSection } from "@/components/sections/contact-section"
 import { MagneticButton } from "@/components/magnetic-button"
 import { useRef, useEffect, useState } from "react"
 
@@ -226,7 +225,7 @@ export default function Index() {
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
-          {["Главная", "Продукты", "Выгоды", "Технология", "Контакты"].map((item, index) => (
+          {["Главная", "Продукты", "Выгоды", "Технология"].map((item, index) => (
             <button
               key={item}
               onClick={() => scrollToSection(index)}
@@ -244,7 +243,7 @@ export default function Index() {
           ))}
         </div>
 
-        <MagneticButton variant="secondary" onClick={() => scrollToSection(4)}>
+        <MagneticButton variant="secondary" onClick={() => scrollToSection(3)}>
           Начать
         </MagneticButton>
       </nav>
@@ -277,7 +276,7 @@ export default function Index() {
               <MagneticButton
                 size="lg"
                 variant="primary"
-                onClick={() => scrollToSection(4)}
+                onClick={() => scrollToSection(3)}
               >
                 Запросить демонстрацию
               </MagneticButton>
@@ -300,7 +299,6 @@ export default function Index() {
         <WorkSection />
         <ServicesSection />
         <AboutSection scrollToSection={scrollToSection} />
-        <ContactSection />
       </div>
 
       <style>{`
