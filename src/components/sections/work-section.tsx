@@ -15,32 +15,32 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+            Продукты
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Флагманская технология</p>
         </div>
 
         <div className="space-y-6 md:space-y-8">
           {[
             {
               number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
-              year: "2024",
+              title: "Flypoint Parametrica",
+              category: "Параметрическое 3D-моделирование · собственное геометрическое ядро",
+              year: "Ядро",
               direction: "left",
             },
             {
               number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
-              year: "2024",
+              title: "LSTECH Framework",
+              category: "Оркестратор расчётных процессов · Реестр отеч. ПО №19941",
+              year: "Платформа",
               direction: "right",
             },
             {
               number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
+              title: "Параметрическая Шина",
+              category: "Автопередача геометрии в любой решатель: FlowVision, ANSYS, inhouse",
+              year: "Интеграция",
               direction: "left",
             },
           ].map((project, i) => (

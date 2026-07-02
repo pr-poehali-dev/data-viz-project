@@ -15,31 +15,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Услуги
+            Выгоды
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Что даёт технология</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "Сроки — в разы меньше",
+              description: "Оптимизация компоновки ЛА за ~40 минут на одном ядре вместо недель ручной работы в CAD.",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Характеристики выше",
+              description: "Многокритериальная оптимизация формы: +11,9% аэродинамического качества, –7,6% сопротивления в реальном кейсе.",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Технологический суверенитет",
+              description: "Полностью российское ПО в Реестре отеч. ПО. Собственное ядро, не зависящее от Parasolid и ACIS.",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "Снижение кадровых рисков",
+              description: "Автоматизация расчётного цикла: один инженер выполняет работу целого отдела без узких специалистов.",
               direction: "bottom",
             },
           ].map((service, i) => (
